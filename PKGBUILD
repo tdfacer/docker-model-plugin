@@ -1,7 +1,7 @@
 # Maintainer: Trevor Facer <trevordf@protonmail.com>
 
 pkgname=docker-model-plugin
-pkgver=1.0.12
+pkgver=1.0.19
 pkgrel=1
 pkgdesc='Docker CLI plugin for Model Runner - manage and run AI models in containers'
 arch=('x86_64')
@@ -11,7 +11,7 @@ depends=('glibc')
 makedepends=('go>=2:1.25')
 optdepends=('docker: for Docker Engine container operations')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/docker/model-runner/archive/v${pkgver}.tar.gz")
-sha256sums=('f5343c856d4375fef1f480c865c70c81e85e94efc2a3099471be7c09195ecce9')
+sha256sums=('5af1c189f6875126d80b19d955100df56c27fd3c68a7f0191932966e742cb676')
 
 prepare() {
   cd "model-runner-${pkgver}"
